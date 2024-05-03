@@ -43,7 +43,7 @@ header .content {
 header .text-logo {
   flex: 1;
   font-family: "Anton";
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #b1a309;
 }
 
@@ -63,7 +63,8 @@ nav li {
 
 nav a {
   vertical-align: bottom;
-  font-size: 0.85rem;
+  font-family: "Anton";
+  font-size: 1rem;
   color: #b1a309
 }
 
@@ -108,6 +109,7 @@ header .mobile {
 .hero {
   display: flex;
   justify-content: center;
+  min-height: fit-content;
 }
 
 .banner {
@@ -121,6 +123,90 @@ header .mobile {
   width: 90%;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.banner h3 {
+  color:#dbded2;
+  font-family: "Anton";
+  font-size: 3rem;
+  margin-left: 3%;
+  margin-bottom: 1%;
+}
+
+.contact-button {
+  background-color: #b97c6b;
+  width: 10%;
+  height: 3rem;
+  border: none;
+  border-radius: 30px;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  color:#dbded2;
+  font-family: "Anton";
+  font-size: 1rem;
+}
+
+/* Portfolio */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 45px;
+  background-color: #b97c6b;
+  padding-bottom: 5%;
+}
+
+.portfolio h2 {
+  color: #dbded2;
+  font-family: "Anton";
+  padding-top: 7rem;
+  font-size: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.project h4 {
+  color:#dbded2;
+  margin-top: 0.5rem;
+  font-family: "Anton";
+}
+
+.project img {
+  height: 300px;
+  width: 400px;
+  border-radius: 8px;
+}
+
+/* Team */
+
+.team {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.team h2 {
+  color: #b97c6b;
+  font-family: "Anton";
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+
+.team-member {
+  display: flex;
+}
+
+.team-member img {
+  width: 250px;
+  height: fit-content;
+  border-radius: 10px;
 }
