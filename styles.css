@@ -106,10 +106,13 @@ header .mobile {
 /* Hero */
 
 .hero {
-
+  display: flex;
+  justify-content: center;
 }
 
 .banner {
+  position: relative;
+  top: 3.75rem; /* To offset for fixed header. */
   background-image: url("images/banner.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -117,4 +120,7 @@ header .mobile {
   height: 700px;
   width: 90%;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
 }
