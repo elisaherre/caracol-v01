@@ -14,9 +14,10 @@
       <a href="index.html" class="logo"><img src="images/caracol-logo.png"></a>
       <nav class="desktop">
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <nav class="mobile">
@@ -34,12 +35,29 @@
     <div class="banner">
       <h1>Caracol Studio</h1>
       <h3>We are design & interiors enthusiasts.</h3>
-      <button class="contact-button">Contact Us</button>
+      <button class="contact-button"><a href="#contact">Contact Us</a></button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Who We Are</h3>
+        <p>At Caracol Studio, we believe in the power of design to transform spaces and enhance experiences. Founded by Sofia Ramirez and Alex Torres, our studio brings together a dynamic team of creative minds dedicated to pushing the boundaries of design innovation.</p>
+        <h3>Our Vision</h3>
+        <p>We envision a world where every space tells a story, evokes emotions, and fosters connection. From residential interiors to commercial environments, our goal is to create designs that inspire and resonate with people on a deeper level.</p>
+        <h3>Our Approach</h3>
+        <p>Combining artistry with functionality, we approach each project with a fresh perspective and a commitment to excellence. Our collaborative process ensures that every detail is meticulously crafted, from concept development to final execution.</p>
+        <h3>Our Services</h3>
+        <p>From interior design to architectural consulting, we offer a wide range of services to meet the unique needs of our clients. Whether you're looking to renovate your home, design a new office space, or create a custom furniture piece, we have the expertise and creativity to bring your vision to life.</p>
+      </div>
     </div>
   </section>
 
   <!-- Portfolio -->
-  <section class="portfolio">
+  <section class="portfolio" id="projects">
     <h2>Portfolio</h2>
     <div class="projects">
       <div class="project">
@@ -70,7 +88,7 @@
   </section>
 
   <!-- Team -->
-  <section class="team">
+  <section class="team" id="team">
     <h2>Our Team</h2>
     <div class="team-members">
       <div class="team-member">
@@ -91,6 +109,28 @@
       </div>
     </div>
   </section>
-</head>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-text">
+      <h3>Join Us On The Journey</h3>
+      <p>Whether you're looking to transform your living space, launch a new product, or elevate your brand identity, Caracol Studio is here to bring your vision to life. Let's collaborate and create something extraordinary together.</p>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button class="message" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="content">
+      <p>&copy; 2024 Caracol Studio. All rights reserved.</p>
+    </div>
 </body>
 </html>
