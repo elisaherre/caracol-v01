@@ -8,7 +8,7 @@ html {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  color:#4a4a4a
+  color:#4a4a4a;
 }
 
 body {
@@ -36,20 +36,16 @@ header {
 
 header .content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding:0.25rem 3rem;
-}
-
-header .text-logo {
-  flex: 1;
-  font-family: "Anton";
-  font-size: 1rem;
-  color: #b1a309;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 header .logo img{
-  height: 1.5rem;
-  padding: 5px;
+  height: 2rem;
 }
 
 header nav ul {
@@ -70,7 +66,6 @@ nav a {
 
 header .icon {
   width: 1rem;
-  padding-left: .75rem;
 }
 
 header .mobile {
@@ -127,12 +122,21 @@ header .mobile {
   justify-content: flex-end;
 }
 
+.banner h1 {
+  font-family: "Anton";
+  color:#b1a309;
+  margin-left: 3%;
+  margin-bottom: 2px;
+  font-size: 3rem;
+}
+
 .banner h3 {
   color:#dbded2;
   font-family: "Anton";
-  font-size: 3rem;
+  font-size: 1.75rem;
+  margin-top: 0;
   margin-left: 3%;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
 }
 
 .contact-button {
@@ -188,10 +192,12 @@ header .mobile {
 
 .team {
   display: flex;
-  width: 90%;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-bottom: 5%;
+  width: 100%;
+  justify-content: center;
 }
 
 .team h2 {
@@ -201,12 +207,38 @@ header .mobile {
   font-size: 2rem;
 }
 
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .team-member {
   display: flex;
+  width: 48%;
 }
 
 .team-member img {
   width: 250px;
   height: fit-content;
   border-radius: 10px;
+  /* filter: grayscale(100%); */
+}
+
+.team-member p {
+font-size: 0.85rem;
+line-height: 1.1rem;
+text-align: justify;
+}
+
+.team-member h4 {
+  font-size: 1.25rem;
+  font-family: "Anton";
+  color: #b1a309;
+  margin: 0;
+}
+
+.team-member-info {
+  padding-left: 2%;
 }
