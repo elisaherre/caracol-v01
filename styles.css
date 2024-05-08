@@ -94,6 +94,7 @@ nav a {
   background-size: cover;
   height: 43rem;
   width: 90%;
+  min-width: 415px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -180,10 +181,14 @@ nav a {
 }
 
 .about-text {
-  width: 50%;
+  width: 60%;
   font-size: 1rem;
   line-height: 1.2rem;
-  margin: 3rem;
+  margin-left: 3rem;
+}
+
+.about-text p {
+  margin: 0;
 }
 
 .about-image {
@@ -194,6 +199,21 @@ nav a {
 .about-image img {
   height: 500px;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 1180px) {
+  .about-content {
+    justify-content: center;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  .about-text {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -222,6 +242,7 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 90%;
+  column-gap: 1.75rem;
 }
 
 .project h4 {
@@ -234,6 +255,12 @@ nav a {
   height: 300px;
   width: 400px;
   border-radius: 8px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .projects {
+    justify-content: center;
+  }
 }
 
 /* Team */
@@ -274,13 +301,12 @@ nav a {
   width: 250px;
   height: fit-content;
   border-radius: 10px;
-  /* filter: grayscale(100%); */
 }
 
 .team-member p {
 font-size: 0.85rem;
 line-height: 1.1rem;
-text-align: justify;
+text-align: left;
 }
 
 .team-member h4 {
@@ -290,7 +316,28 @@ text-align: justify;
 }
 
 .team-member-info {
-  padding-left: 2%;
+  padding-left: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1145px) {
+  .team-members {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-member {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .team-member img {
+    width: 175px;
+    height: fit-content;
+    border-radius: 10px;
+  }
 }
 
 /* Contact */
@@ -378,6 +425,24 @@ textarea {
   font-family: "Anton";
   font-size: 1rem;
   margin: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact-text {
+    width: 70%;
+    margin: 0;
+    }
+
+  .contact-form {
+    width: 70%;
+  }
 }
 
 /* Footer */
