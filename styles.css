@@ -11,13 +11,6 @@ html {
   color:#4a4a4a;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  html {
-  font-size: 12px;
-  }
-}
-
-
 body {
   background-color: #dbded2;
   line-height: 1;
@@ -94,7 +87,6 @@ nav a {
   background-size: cover;
   height: 43rem;
   width: 90%;
-  min-width: 415px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -245,6 +237,10 @@ nav a {
   column-gap: 1.75rem;
 }
 
+.proyect {
+  width: 100%;
+}
+
 .project h4 {
   color: #b97c6b;
   margin-top: 0.5rem;
@@ -253,13 +249,21 @@ nav a {
 
 .project img {
   height: 300px;
-  width: 400px;
+  width: fit-content;
   border-radius: 8px;
 }
 
 @media only screen and (max-width: 1400px) {
   .projects {
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .project img {
+    height: 200px;
+    width: fit-content;
+    border-radius: 8px;
   }
 }
 
