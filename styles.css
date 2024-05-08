@@ -234,7 +234,6 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 90%;
-  column-gap: 1.75rem;
 }
 
 .proyect {
@@ -249,7 +248,7 @@ nav a {
 
 .project img {
   height: 300px;
-  width: fit-content;
+  width: 420px;
   border-radius: 8px;
 }
 
@@ -262,7 +261,7 @@ nav a {
 @media only screen and (max-width: 375px) {
   .project img {
     height: 200px;
-    width: fit-content;
+    width: 280px;
     border-radius: 8px;
   }
 }
@@ -303,7 +302,7 @@ nav a {
 
 .team-member img {
   width: 250px;
-  height: fit-content;
+  height: 380px;
   border-radius: 10px;
 }
 
@@ -339,7 +338,7 @@ text-align: left;
 
   .team-member img {
     width: 175px;
-    height: fit-content;
+    height: 265px;
     border-radius: 10px;
   }
 }
