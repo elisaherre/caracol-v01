@@ -234,6 +234,7 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 90%;
+  column-gap: 1.75rem;
 }
 
 .proyect {
@@ -248,7 +249,7 @@ nav a {
 
 .project img {
   height: 300px;
-  width: 420px;
+  width: 410px;
   border-radius: 8px;
 }
 
@@ -258,11 +259,17 @@ nav a {
   }
 }
 
+@media only screen and (max-width: 430px) {
+  .project img {
+    height: 250px;
+    width: 340px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .project img {
     height: 200px;
-    width: 280px;
-    border-radius: 8px;
+    width: 250px;
   }
 }
 
@@ -283,8 +290,8 @@ nav a {
 
 .team h2 {
   font-family: "Anton";
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-size: 2rem;
 }
 
@@ -342,6 +349,19 @@ text-align: left;
     border-radius: 10px;
   }
 }
+
+@media only screen and (max-width: 580px) {
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member img {
+    margin: 1rem;
+  }
+}
+
 
 /* Contact */
 
