@@ -21,6 +21,7 @@ a {
   text-decoration: none;
 }
 
+
 ol, ul {
   list-style: none;
 }
@@ -152,6 +153,10 @@ header .mobile {
   font-size: 1rem;
 }
 
+.contact-button :visited {
+  color: #dbded2;
+}
+
 /* About Us */
 
 .about {
@@ -178,10 +183,25 @@ header .mobile {
 .about-content {
   width: 90%;
   color: #dbded2;
+  display: flex;
+  align-items: flex-end;
 }
 
 .about-text {
   width: 50%;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.about-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 70%;
+  border-radius: 10px;
 }
 
 /* Portfolio */
@@ -283,6 +303,12 @@ text-align: justify;
   justify-content: center;
   align-items: center;
 }
+
+.contact-section {
+  display: flex;
+  width: 60%;
+}
+
 .contact a {
   color: #dbded2;
 }
@@ -290,10 +316,70 @@ text-align: justify;
   color: #b1a309;
   font-size: 2rem;
   font-family: "Anton";
+  margin-top: 3rem;
 }
 
 .contact-text {
 width: 50%;
+margin-right: 3rem;
+}
+
+.contact-text p {
+  font-size: 0.85rem;
+  line-height: 1.1rem;
+  text-align: justify;
+  }
+
+.contact h3 {
+  color: #b1a309;
+  font-family: "Anton";
+}
+
+.contact-form {
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: fit-content;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+input {
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  border: none;
+  border-bottom: 1px solid #707070;
+  height: 1.2rem;
+  width: 100%;
+  background-color: #dbded2;
+}
+
+textarea {
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  border: none;
+  border-bottom: 1px solid #707070;
+  height: 2.5rem;
+  width: 100%;
+  background-color: #dbded2;
+}
+
+.message {
+  background-color: #b97c6b;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius: 30px;
+  color:#dbded2;
+  font-family: "Anton";
+  font-size: 1rem;
+  margin: 1rem;
 }
 
 /* Footer */
@@ -302,6 +388,7 @@ footer {
   display: flex;
   align-items:last baseline;
   justify-content: center;
-  height: 10rem;
+  font-size: 0.85rem;
+  height: 5rem;
   color: #b97c6b;
 }
